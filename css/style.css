@@ -1,0 +1,821 @@
+/*Importação fonte*/
+
+@font-face {
+    font-family: 'Cheque-Regular';
+    src:url('../fonts/Cheque-Regular.ttf.woff') format('woff'),
+        url('../fonts/Cheque-Regular.ttf.svg#Cheque-Regular') format('svg'),
+        url('../fonts/Cheque-Regular.ttf.eot'),
+        url('../fonts/Cheque-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+}
+
+/*Fim importação fonte*/
+
+/*Scrollbar*/
+
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: rgb(0, 126, 0) #f8f2dd;
+  }
+
+  *::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #faf2d6;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 126, 0);
+    border-radius: 4px;
+    border: 1px solid #000000;
+  }
+  
+/*Fim scrollbar*/
+
+/*Body style*/
+body{
+    background-size: 20%;
+    background-position: right;
+    background-repeat:repeat-y;
+}
+/*Fim body style*/
+
+
+/*Reset das margens e padding*/
+html{
+    scroll-behavior: smooth;
+    background: linear-gradient(135deg, rgb(246, 250, 236) 38%,rgb(244, 248, 234) 38%,rgb(236, 250, 193) 71%, rgb(171, 190, 103) 100%);
+} 
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Fim reset das margens e padding*/
+#img {
+    z-index: 2;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    margin-top: 11.5%;
+    margin-left: 48%;
+}
+
+
+#img > img {
+    width: 60px;
+    animation: jumping 1s linear infinite;
+    cursor: default;
+}
+
+@keyframes jumping {
+    from {transform: translateY(-15px);}
+    50% {transform: translateY(0);}
+    to {transform: translateY(-15px);}
+}
+
+/*Tela home*/
+
+#home img{
+    z-index: 2;
+}
+#home i{
+    z-index: 2;
+}
+
+#home input{
+    z-index: 2;
+}
+
+#home h1{
+    z-index: 2;
+}
+.background-home{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#deepgarden{
+    border:none;
+    background-color: transparent;
+    text-align: center;
+    font-family:Cheque-Regular;
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(0, 126, 0);
+    border-radius: 50%;
+    transition: all 0.6s;
+}
+.imagem{
+    width: 20%;
+    margin-left:4%;
+    border-radius: 5%;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+.imagem:hover{
+    background-color: rgba(66, 165, 57, 0.2);
+}
+.nav{
+    display: flex;
+    justify-content: center;
+}
+.conteiner{
+    position: relative;
+    display: inline;
+}
+
+.conteiner:hover .titulo{
+    opacity: 1;
+}
+.titulo{
+    font-family: 'Cheque-Regular';
+    opacity: 0;
+    position: absolute;
+    display: inline-block;
+    color:rgb(103, 255, 103);
+    font-weight: bold;
+    margin-left: -83%;
+    margin-top: -10%;
+}
+h1{
+    margin: 0;
+}
+#logo{
+    cursor: pointer;
+    width: 120%;
+    margin-left: -20%;
+    margin-bottom: 50%;
+}
+.botao{
+    color:rgb(0, 126, 0) ;
+    text-decoration: none;
+    margin-right: 50px;
+    text-align: center;
+    font-size: 50px;
+}
+.botao:hover{
+    color:rgb(103, 255, 103);
+}
+
+/*Fim tela home*/
+
+
+/*navbar*/
+#cabe{
+    padding: 0 2.4rem;
+    align-items: center;
+    display:flex;
+    justify-content: space-between;
+     background-color: #27471F;
+     height: 60px;
+     position: fixed;
+     width: 100%;
+     z-index:1 ;
+     opacity: 1;
+}
+#cabe ul{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+#cabe ul li{
+    color:rgb(255, 255, 255) ;
+    text-decoration: none;
+    list-style: none;
+}
+.links{
+    gap: 4rem;
+    margin-left: -15%;
+}
+.links li{
+    font-size: 20px;
+}
+.icons{
+    margin-right: 5%;
+    gap: 3rem;
+    margin-top: 15px;
+}
+.botao2{
+    color:rgb(255, 255, 255) ;
+    text-decoration: none;
+    font-size: 40px;
+    align-items:center;
+}
+.botao2:hover{
+    color:rgb(185, 255, 185);
+}
+#cabe ul li a{
+    text-decoration: none;
+    color: white;
+}
+#cabe ul li a:hover{
+    color:rgb(185, 255, 185);
+}
+.logopeq{
+    width: 50px;
+}
+
+/*Fim nav*/
+
+
+
+/*Tela Quem somos*/
+.quemtitulo{
+    font-family: 'Cheque-Regular';
+    font-weight: bold;
+    margin-top: 5%;
+    text-align: center;
+    color: rgb(0, 126, 0);
+}
+#containertxt{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+.txt{
+    width: 40%;
+    text-align: justify;
+    position: relative;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*Fim tela quem somos*/
+
+/*Tela fotos*/
+#page2{
+    width: 70%;
+    margin-left: 15%;
+}
+.ti{
+    text-align: center;
+    margin-top:5%;
+    font-family:'Cheque-Regular';
+    color: rgb(0, 126, 0);
+    font-weight: bold;
+    font-size:50px;
+}
+/*Fim tela fotos*/
+
+
+/*Tela Serviços*/
+#page3{
+    width: 100%;
+    height:755px;
+    background-image:url("../imagens/servicobackground.jpg") ;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#page3 ul{
+    width: 40%;
+    margin-top: 2.5%;
+}
+#page3 ul li{
+    list-style: none ;
+    font-size: 50px;
+    margin-bottom: 5%;
+    background-color:rgb(66, 165, 57) ;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 2px 5px 2px 2px rgba(0, 0, 0, 0.884);
+    color: white;
+    cursor: pointer;
+}
+
+
+#page3 ul li:hover{
+    background-color:rgb(2, 70, 2) ;
+    color: white;
+    box-shadow: 2px 5px 2px 2px rgba(0, 0, 0, 0.74);
+    color:rgb(103, 255, 103);
+}
+.serv-container{
+    width:40%;
+    height: 100%;
+    background-color:#27471fa1;
+    display: inline-block;
+
+}
+.imgserv{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px; 
+    position: absolute;
+}
+
+.tituloserv{
+    text-align: left;
+    margin-top: 5%;
+    margin-left:7.5%;
+    font-family: 'Cheque-Regular';
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.txtserv{
+    text-align: justify;
+    font-size: 30px;
+    width: 85%;
+    margin-left:7.5%;
+    color: white;
+    margin-top: 5%;
+}
+
+.servico{
+    width: 40%;
+    height: 400px;
+    margin-top: -1.5%;
+    background-position: center;
+    background-size: 120%;
+    margin-bottom: 2.5%;
+    border:1px solid black;
+    border-radius: 20px;
+    display: none;
+    z-index: 2;
+    position: absolute;
+}
+
+.servico button{
+    margin-top: 43%;
+    position: relative;
+}
+.servico button:hover{
+    background-color:rgb(2, 70, 2) ;
+    color: white;
+    box-shadow: 2px 5px 2px 2px rgba(0, 0, 0, 0.74);
+    color:rgb(103, 255, 103);
+
+}
+.btn-orce{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 20%;
+    color: white;
+    width: 60%;
+    font-size: 45px;
+    background-color: rgb(66, 165, 57);
+    border-radius: 20px;
+    border: none;
+    box-shadow: 2px 5px 2px 2px rgba(0, 0, 0, 0.884);
+    margin-top: 15%;
+    cursor:pointer;
+}
+.btn-orce:hover{
+    background-color:rgb(2, 70, 2) ;
+    color: white;
+    box-shadow: 2px 5px 2px 2px rgba(0, 0, 0, 0.74);
+    color:rgb(103, 255, 103);
+
+}
+/*Fim tela Serviços*/
+
+/*Tela avaliações*/
+#page4{
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 8%;
+}
+.avalia-container{
+    width: 80%;
+    height: 500px;
+    margin-left: 10%;
+    background-color:#AE9566;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+    margin-bottom: 100px;
+}
+
+.avalia-container img{
+    position: absolute;
+}
+
+
+.avalia-container h1{
+    position: absolute;
+    display: inline;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    margin-top: 2.5%;
+}
+
+.perfil-avalia{
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    margin-top: 3%;
+    margin-right: 50%;
+}
+
+.avalia-container p{
+    margin-top: 20%;
+    width: 65%;
+    font-size: 35px;
+    margin-left: 8%;
+}
+.avalia-titulo{
+    text-align: center; 
+    margin-top: 5%; 
+    margin-left: 2%;
+    font-family: 'Cheque-Regular';  
+    color:rgb(0, 126, 0); 
+    font-weight: bold ; 
+    font-size:50px;
+}
+.estrelaimg{
+    width: 25%;
+    margin-top: 3%
+}
+#avalia-slider{ 
+    background-image: url(https://blog.plantei.com.br/wp-content/uploads/2019/04/acessorios-para-jardinagem.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 30px; 
+}
+/*Fim tela avaliações*/
+
+
+
+
+
+
+
+
+
+
+/*Media desktop*/
+  /* 768px - 1024px = telas menores, laptops*/
+  @media (min-width: 1400px) and (max-width: 1750px) {
+    #img{
+        margin-top: 6%;
+    }
+    /*Navbar*/
+    .links{
+        margin-left: 0;
+    }
+
+    /*Fim navbar*/
+
+    /*Tela home*/
+    .botao{
+        margin-top:-5%;
+        margin-bottom: 10%;
+
+    }
+    .imagem{
+        margin-top: -2%;
+    }
+
+    /*Fim tela home*/
+
+    /*Tela Quem somos*/
+    .txt{
+        width: 60%;
+    }
+    
+    /*Fim tela quem somos*/
+    /*Tela serviços*/
+    .btn-orce{
+        font-size: 30px;
+    }
+    /*Fim tela serviços*/
+}
+@media (min-width: 1000px) and (max-width: 1399px) {
+    /*Navbar*/
+    .links{
+        margin-left: 0;
+        gap: 1rem;
+    }
+    .links li{
+        font-size: 15px;
+    }
+    .icons{
+        margin-right: 1%;
+        gap: 1rem;
+        margin-top: 0.5%;
+        margin-right: 10%;
+    }
+    #cabe ul{
+        gap: 3.0rem;
+    }
+    .botao2{
+        font-size: 22px;
+    }
+    .margem-backgrounddir{
+        opacity: 0;
+    }
+    .margem-background{
+        opacity: 0;
+    }
+
+    /*Fim navbar*/
+
+    /*Tela home*/
+    
+    .titulo{
+        margin-left: -83%;
+        margin-top: 8.5%;
+    }
+    .botao{
+        margin-top:-3%;
+        margin-bottom: 5%;
+        font-size: 35px;
+    }
+    .imagem{
+        margin-top: 5%;
+    }
+    
+    #logo{
+        width: 80%;
+        margin-left: 7.5%;
+        margin-bottom: 0%;
+    }   
+    #deepgarden{
+        margin: 0;
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(0, 126, 0);
+        transition: all 0.6s;
+    }
+
+    /*Fim tela home*/
+
+    /*Tela Quem somos*/
+    .txt{
+        width: 60%;
+    }
+    
+    /*Fim tela quem somos*/
+    /*Tela serviços*/
+    #page3{
+        height: 500px;
+    }
+    #page3 ul{
+        width: 40%;
+        margin-top: 3.5%;
+    }
+    #page3 ul li{
+        font-size: 30px;
+        margin-bottom: 6%;
+    }
+    .serv-container{
+        width:50%;
+        height: 100%;
+    }
+
+    .tituloserv{
+        margin-top: 5%;
+        font-size: 30px;
+    }
+
+    .txtserv{
+        font-size: 20px;
+    }
+
+    .servico{
+        width: 40%;
+        height:250px;
+        background-size: 100%;
+    }
+
+    .servico button{
+        margin-top: 35%;
+        font-size: 20px;
+    }
+    .btn-orce{
+        width: 60%;
+        font-size: 30px;
+        margin-top: 15%;
+    }
+    /*Fim tela serviços*/
+
+    /*Tela avaliações*/
+.avalia-container{
+    width: 80%;
+    height:350px;
+    margin-top: 10%;
+    margin-bottom: 100px;
+}
+
+
+.avalia-container h1{
+    font-size: 30px;
+    margin-top: 2.5%;
+}
+
+.perfil-avalia{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: 3%;
+    margin-right: 55%;
+}
+
+.avalia-container p{
+    margin-top: 20%;
+    width: 75%;
+    font-size: 25px;
+    margin-left: 12.5%;
+}
+
+/*Fim tela avaliações*/
+
+}
+/*fim media desktop*/
+
+/*media mobile*/
+    @media (min-width: 200px) and (max-width: 1000px) {
+       /* html{
+            display: flex;
+            justify-content: center;
+        }*/
+        body{
+            max-width: 400px;
+            margin-left: 0%;
+        }
+        /*Tela home*/
+        .imagem{
+            width: 40%;
+            margin-left: 6%;
+            border-radius: 5%;
+            transition: all 0.6s;
+            
+        }
+        .titulo{
+            opacity: 1;
+            font-size: 20px;
+            margin-top: 5%;
+            color: rgb(199, 255, 199);
+            font-family: 'Cheque-Regular';
+        }
+        #logo{
+            width: 75%;
+            margin-left:1%;
+            margin-top: 17%;
+            margin-bottom: 6.5%;
+        }
+        #deepgarden{
+            position: absolute;
+            font-size: 40px;
+        }
+        .botao{
+            font-size: 35px;
+            padding: 0 5% 0 0;
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+        .background-home{
+            width: 400px;
+            height: 550px;
+        } 
+        /*Fim tela home*/
+
+        /*navbar*/
+        #cabe{
+            opacity: 0;
+        }
+        #cabe ul{
+            opacity: 0;
+        }
+        /*Fim navbar*/
+        
+
+        /*Tela Quem somos*/
+        .pag1{
+            width:100%;
+        }
+        .quemtitulo{
+            font-size: 20px;
+            margin-top: 5%;
+        
+        }
+        .txt{
+            width: 95%;
+            font-size: 15px;
+        }
+
+        /*Fim tela quem somos*/
+        /*Tela fotos*/
+        #page2{
+            width: 100%;
+            margin-left: 0%;
+        }
+        .ti{
+            font-size: 20px;
+        }
+        /*Fim tela fotos*/
+
+
+        /*Tela Serviços*/
+        #page3{
+            width: 100%;
+            background-image: url("");
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+        #page3 ul{
+            width: 100%;
+            margin-top: -7%;
+            background-color:#27471fa1;
+        }
+        #page3 ul li{
+            width: 97%;
+            margin-left: 1.5%;
+            font-size: 20px;
+            margin-bottom: 5%;
+        }
+        .serv-container{
+            width:100%;
+            height:450px;
+        }
+        .tituloserv{
+            margin-top: 5%;
+            margin-left:7.5%;
+            font-size: 25px;
+        }
+
+        .txtserv{
+            font-size: 20px;
+            width: 85%;
+            margin-left:7.5%;
+            margin-top: 5%;
+        }
+
+        .servico{
+            width: 400px;
+            height: 200px;
+        }
+        
+        .servico button{
+            margin-top: 35%;
+        }
+        .btn-orce{
+            font-size: 15px;
+            margin-top: 5%;
+        }
+        /*Fim tela Serviços*/
+
+        /*Tela avaliações*/
+        #avalia-slider{
+            background-image: url("");
+        }
+        #page4{
+            width: 100%;
+            margin-left: 0%;
+            margin-bottom: 8%;
+        }
+        .avalia-titulo{
+            font-size: 20px;
+        } 
+        .avalia-container{
+            margin-top: 8%;
+            margin-left: -0.07%;
+            width: 100%;
+            height: 200px;
+            margin-bottom: 100px;
+        }
+
+        .avalia-container{
+            border-radius: 30px;
+        }
+
+
+        .avalia-container h1{
+            font-size: 24px;
+        }
+
+        .perfil-avalia{
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            margin-top: 3%;
+            margin-right: 70%;
+        }
+
+        .avalia-container p{
+            margin-top: 25%;
+            width: 100%;
+            font-size: 15px;
+            margin-left: 6%;
+        }
+        .estrelaimg{
+            margin-top: 5%;
+        }
+        /*Fim tela avaliações*/
+        #maps{
+            width: 300px;
+        }
+    }
+
+/*Fim MQ*/

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <script src="js/funcao.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleForm.css">
+    <link rel="stylesheet" href="css/styleorcamento.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts-icones.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styleFooter.css">
+    <link rel="shortcut icon" href="imagens/logopng-.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazer Orçamento</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header id="cabe">
+        <a href="index.html#home"><img class="logopeq"src="imagens/logopng-.png" alt=""></a>
+    <ul class="links">
+        <li><a href="index.html#home" style="margin-left: 5%;">Home</a></li>
+        <li><a href="index.html#Serviços">Serviços</a></li>
+        <li><a href="index.html#Fotos">Fotos</a></li>
+        <li><a href="index.html#Avaliações">Avaliações</a></li>
+        <li><a href="index.html#Quem-Somos">Quem Somos</a></li>
+    </ul>
+    <ul class="icons">
+        <li><a href="#" class="botao2"><span> <i class="icon icon-facebook"></i> </span></a></li>
+        <li><a href="#" class="botao2"><span> <i class="icon icon-instagram"></i> </span></a></li>
+        <li><a href="#" class="botao2"><span> <i class="icon icon-whatsapp"></i> </span></a></li>
+        <li><a href="#" class="botao2"><span> <i class="icon icon-linkedin"></i> </span></a></li>
+    </ul>
+</header>
+<!-- Fim Navbar -->
+
+<!--Formulários-->
+
+<div class="container">
+        <div class="form">
+            <form action="index.html#home">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Solicite um orçamento</h1>
+                    </div>
+                    <div class="login-button">
+                        <button style="display: none;"><a href="#">Entrar</a></button>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Primeiro Nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+
+                    <div class="input-box" style="width: 100%;">
+                        <label for="password">Conte mais sobre seu projeto</label>
+                        <textarea required name="" id="" cols="30" rows="10" placeholder="Especifique detalhadamente seu projeto com o tamanho, tipo de serviço etc." style="font-family: Arial, Helvetica, sans-serif;"></textarea>
+                    </div>
+
+                </div>
+
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Como nos conheceu?</h6>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input id="female" type="radio" name="gender">
+                            <label for="male">Pesquisa na web</label>
+                        </div>
+                        <div class="gender-input">
+                            <input id="male" type="radio" name="gender" style="margin-left: -10%;">
+                            <label for="male">Anúncios</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="others" type="radio" name="gender" style="margin-left: 8%;">
+                            <label for="others">Ouviu falar</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="none" type="radio" name="gender">
+                            <label for="none">Outro</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="continue-button">
+                    <button><a href="#">Continuar</a> </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<!--Fim Formulário -->
+
+
+<!--Rodapé by: Larissa Kich-->
+
+<footer >
+    <div id="footer_content">
+        <div id="footer_contacts">
+            <h1>Deep Garden</h1>
+            <p>Jardins fantásticos dos seus sonhos.</p>
+
+            <div id="footer_social_media">
+                <a href="#" class="footer-link" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+        
+        <ul class="footer-list">
+            <li>
+                <h3>Nosso escritório</h3>
+            </li>
+            <li>
+                <a onclick="mapa()" style="cursor: pointer;">R. Lucas Nogueira Garcês - Centro</a>
+               <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.373817274555!2d-46.55367782536003!3d-23.12000764552476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cec0e0bcba95b5%3A0x1237fcda893962e3!2sR.%20Lucas%20Nogueira%20Garc%C3%AAs%20-%20Centro%2C%20Atibaia%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1696029569831!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0; display: none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             
+            </li>
+           
+        </ul>
+
+        <ul class="footer-list">
+            <li>
+                <h3>Contrate-nos</h3>
+            </li>
+            <li>
+                <a href="orcamento.html" class="footer-link">Fazer orçamento</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">deepgarden@outlook.com</a>
+                <i class="fa-regular fa-envelope"></i>
+            </li>
+            <li>
+                <a href="#" class="footer-link">+55 11 956735552</a>
+            </li>
+        </ul>
+
+        <div id="footer_subscribe">
+            <h3>inscreva-se</h3>
+
+            <p>
+                Cadastre seu e-mail para receber novidades, ofertas e proomoções incriveis.
+            </p>
+
+            <div id="input_group">
+                <input type="email" id="email">
+                <button>
+                    <i class="fa-regular fa-envelope"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer_copyright">
+        Deep Garden Web
+        &#169
+        2023 all rights reserved
+    </div>
+</footer>
+
+<!--Fim Rodapé by: Larissa Kich-->
+</body>
+</html>
